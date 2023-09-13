@@ -64,7 +64,7 @@ iterations<-iterations2
 number_networks<-number_networks2
 
 
-data<-c(matrix(t(data),30,1,byrow=TRUE))
+data<-c(matrix(t(data),byrow=TRUE))
 
 if(length(hub_probs)!=ngenes){stop("The length of hub_probs should be equal to the number of genes")}
 if(length(neighbour_probs)!=(ngenes^2)){stop("neighbour_probs should be a squared matrix of size nb of genes * nb of genes")}
